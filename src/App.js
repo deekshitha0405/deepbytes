@@ -1,39 +1,41 @@
 import "./styles.css";
-
+import camera from "./assets/camera.png";
+import plane from "./assets/plane.png";
+import box from "./assets/safe-box.png";
 export default function App() {
   const list = [
     {
-      image: "",
+      image: camera,
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
     cupiditate magnam.`,
     },
     {
-      image: "",
+      image: box,
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
     cupiditate magnam.`,
     },
     {
-      image: "",
+      image: plane,
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
     cupiditate magnam.`,
     },
     {
-      image: "",
+      image: box,
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
     cupiditate magnam.`,
     },
     {
-      image: "",
+      image: plane,
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
     cupiditate magnam.`,
     },
     {
-      image: "",
+      image: camera,
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
     cupiditate magnam.`,
@@ -98,10 +100,10 @@ export default function App() {
           <div className="image-container"></div>
         </aside>
       </section>
-      <section className="middle-section">
+      <section className=" d-flex middle-section">
         {list.map((el, index) => (
           <div key={index} className="inner-card-container">
-            <img src="el.image" alt="image" />
+            <img src={el.image} alt="image" />
             <h3>{el.header}</h3>
             <p>{el.description}</p>
           </div>
@@ -117,15 +119,24 @@ export default function App() {
       </section>
       <section className="d-flex footer-section">
         <h1>Reiciendis maiores cupiditate</h1>
-        <div>
-          <img src="image" alt="image" />
-          <img src="image" alt="image" />
-          <img src="image" alt="image" />
-          <img src="image" alt="image" />
+        <div className="d-flex fl-d-r image-container jusify-center">
+          <img src="https://wallpaperaccess.com/full/133855.png" alt="image" />
+          <img
+            src="https://i.pinimg.com/originals/e5/4d/d4/e54dd452450c88f00c3bf77c74219621.jpg"
+            alt="image"
+          />
+          <img
+            src="https://i.pinimg.com/originals/76/e8/99/76e899820c06b35f019e4e830140ecf5.jpg"
+            alt="image"
+          />
+          <img
+            src="https://i.pinimg.com/564x/df/e8/b4/dfe8b48a8ad6badb1606b675754d6ad3.jpg"
+            alt="image"
+          />
         </div>
         <div className="footer-card">
           <div className="footer-card-div">
-            <h3>Et eaque id dolores porro magni occaecati aut</h3>
+            <h2>Et eaque id dolores porro magni occaecati aut</h2>
             <p>
               Vel eos iusto tenetur omnis nesciunt quod excepturi. Beatae quasi
               quia. Repellendus autem quos qui aut quas assumenda aut est et. Ut
@@ -138,7 +149,7 @@ export default function App() {
           </div>
           <div className="footer-card-div">
             {" "}
-            <h3>Possimus aliquid laboriosam.</h3>
+            <h2>Possimus aliquid laboriosam.</h2>
             <p>
               Error ducimus quia cumque. Ad qui quis. Facere harum numquam
               explicabo. Autem eius voluptatem quo et laboriosam neque in nobis.
@@ -151,7 +162,7 @@ export default function App() {
           </div>
           <div className="footer-card-div">
             {" "}
-            <h3>Accusantium fugit nemo ab maiores ut aut qui.</h3>
+            <h2>Accusantium fugit nemo ab maiores ut aut qui.</h2>
             <p>
               Dolorem mollitia commodi aut enim fugit. Voluptatem quia impedit.
               Dolorem provident eveniet aliquid vitae. Ut ea recusandae.
