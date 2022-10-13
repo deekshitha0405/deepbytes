@@ -6,43 +6,43 @@ export default function App() {
       image: "",
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
-    cupiditate magnam.`
+    cupiditate magnam.`,
     },
     {
       image: "",
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
-    cupiditate magnam.`
+    cupiditate magnam.`,
     },
     {
       image: "",
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
-    cupiditate magnam.`
+    cupiditate magnam.`,
     },
     {
       image: "",
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
-    cupiditate magnam.`
+    cupiditate magnam.`,
     },
     {
       image: "",
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
-    cupiditate magnam.`
+    cupiditate magnam.`,
     },
     {
       image: "",
       header: "Error inventore nulla.",
       description: `Ad reiciendis quo et beatae quas nobis
-    cupiditate magnam.`
-    }
+    cupiditate magnam.`,
+    },
   ];
   return (
     <main>
       <section className="main-section">
-        <div>
+        <div className="main-innerContainer">
           <h1>
             Quia quam nam
             <br />
@@ -55,8 +55,11 @@ export default function App() {
           </h4>
 
           <div className="d-flex fl-d-r">
-            <img src="" alt="data" />
-            <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST3UPVxMufEQc5NUTiMc4eUWPe7SVRCICtCg&usqp=CAU"
+              alt="mainsection-image"
+            />
+            <div className="main-innerDiv">
               <h3>Et repudiandae iusto.</h3>
               <p>
                 Aut et voluptatibus mollitia et recusandae quibusdam laboriosam
@@ -65,8 +68,11 @@ export default function App() {
             </div>
           </div>
           <div className="d-flex fl-d-r">
-            <img src="" alt="data" />
-            <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST3UPVxMufEQc5NUTiMc4eUWPe7SVRCICtCg&usqp=CAU"
+              alt="mainsection-image-2"
+            />
+            <div className="main-innerDiv">
               <h3>Quibusdam modi nobis inventore velit.</h3>
               <p>
                 Voluptatem ea asperiores enim temporibus quo praesentium
@@ -75,8 +81,11 @@ export default function App() {
             </div>
           </div>
           <div className="d-flex fl-d-r">
-            <img src="" alt="data" />
-            <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST3UPVxMufEQc5NUTiMc4eUWPe7SVRCICtCg&usqp=CAU"
+              alt="mainsection-image-3"
+            />
+            <div className="main-innerDiv">
               <h3>Numquam dolorem ea.</h3>
               <p>
                 Laboriosam voluptate odio sint excepturi quia ratione cupiditate
@@ -85,7 +94,9 @@ export default function App() {
             </div>
           </div>
         </div>
-        <aside></aside>
+        <aside>
+          <div className="image-container"></div>
+        </aside>
       </section>
       <section className="middle-section">
         {list.map((el, index) => (
@@ -99,7 +110,7 @@ export default function App() {
       <section className="d-flex news-setler">
         <h1>Get our newsletter</h1>
         <h5>To join worldwide community</h5>
-        <div>
+        <div className="input-container">
           <input placeholder="Eg. hipolito.Kemmer@yahoo.com"></input>
           <button>Send now</button>
         </div>
